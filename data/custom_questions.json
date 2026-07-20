@@ -1,0 +1,89 @@
+{
+  "Tutor Set - People": {
+    "questions": [
+      {
+        "type": "P2",
+        "cue_card": "Describe a person who has strong opinions",
+        "prompts": [
+          "Who this person is",
+          "How you knew him/her",
+          "What kinds of strong opinions this person has",
+          "And explain why you think he/she is a person who has strong opinions"
+        ]
+      },
+      {
+        "type": "P2",
+        "cue_card": "Describe an old friend you had lost touch with and got in contact with again",
+        "prompts": [
+          "Who he/she is",
+          "How you knew each other",
+          "Why you lost contact",
+          "How you got in contact again",
+          "And explain how you felt after getting in contact again"
+        ]
+      },
+      {
+        "type": "P2",
+        "cue_card": "Describe an old person you know who has had an interesting life",
+        "prompts": [
+          "Who this person is",
+          "Where he/she lives",
+          "What he/she has done in his/her life",
+          "And explain how you feel about him/her"
+        ]
+      }
+    ]
+  },
+  "Events&Experience": {
+    "questions": [
+      {
+        "type": "P2",
+        "cue_card": "Describe a time when you answered a phone call from someone you didn't know in a public place",
+        "prompts": [
+          "When and where it happened",
+          "Who called you",
+          "What he/she said",
+          "How you responded",
+          "And explain how you felt about the experience"
+        ]
+      },
+      {
+        "type": "P2",
+        "cue_card": "Describe something you did in your study/work that has made you feel confident",
+        "prompts": [
+          "When and where it happened",
+          "What you did",
+          "Why it made you feel confident",
+          "And explain how you felt about it"
+        ]
+      },
+      {
+        "type": "P2",
+        "cue_card": "Describe a challenge you faced that you thought was rather difficult",
+        "prompts": [
+          "What it was",
+          "When and where you faced it",
+          "Why you thought it was a difficult challenge",
+          "And explain how you felt at the time"
+        ]
+      }
+    ]
+  },
+  "HomeworkPart2": {
+    "questions": [
+      {
+        "type": "P2",
+        "cue_card": "Where is your hometown?",
+        "prompts": [
+          "Is that a big city or a small place?",
+          "What's your hometown famous for?",
+          "Please describe your hometown a little.",
+          "Do you like your hometown? / What do you like (most) about your hometown?",
+          "Is there anything you dislike about it?",
+          "How long have you been living there?",
+          "Do you think you will continue living there for a long time?"
+        ]
+      }
+    ]
+  }
+}
