@@ -15,7 +15,7 @@
 
 `
 IELTS-SpeakingCoach/
-├── data/                  # 题库数据
+├── data/                  # 题库数据（剑桥9-21，45套真题）
 │   ├── question_bank.py   # 官方题库（Cambridge 9/13）
 │   ├── custom_questions.json  # 自定义题目
 │   └── __init__.py
@@ -96,3 +96,4 @@ python main.py
 ## 许可证
 
 MIT
+
