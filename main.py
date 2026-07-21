@@ -297,7 +297,7 @@ class App(QMainWindow):
             self.show_q(); self.upd_info(); self.set_status("Started")
             return
         pi = self.pc.currentIndex()
-        pns = ["Part 1 - Introduction & Interview", "Part 2 - Individual Long Turn", "Part 3 - Two-way Discussion"]
+        pns = ["Part 1 - Introduction & Interview", "Part 2 - Individual Long Turn", "Part 3 - Discussion"]
         pn = pns[pi]
         if pn not in td:
             QMessageBox.warning(self, "Error", "Test data not found")
@@ -324,7 +324,7 @@ class App(QMainWindow):
         self.sample_btn.setVisible(False)
         self.correction_btn.setEnabled(False)
         self.correction_btn.setVisible(False)
-        if "questions" in d:
+        if "questions" in d and "topic" not in d and "cue_card" not in d:
             qs = d["questions"]
             if self.qidx >= len(qs):
                 self.qa.setText("All questions completed! Practice another test.")
@@ -356,7 +356,7 @@ class App(QMainWindow):
             self.tml.setText("Timer: Ready"); self.pb.setValue(0)
             self.timer.stop()
             # Show nav for custom flat format
-            if "questions" in d:
+            if "questions" in d and "topic" not in d and "cue_card" not in d:
                 nq = len(d["questions"])
                 self.nav_row.setVisible(nq > 1)
                 self.q_pos_label.setText(f"Q {self.qidx+1} / {nq}")
@@ -457,7 +457,7 @@ class App(QMainWindow):
         d = self.qdata
         pi = 1
         qi = None
-        if "questions" in d:
+        if "questions" in d and "topic" not in d and "cue_card" not in d:
             q = d["questions"][self.qidx]
             qt = q.get("type", "P2")
             pi = int(qt[1]) if len(qt) >= 2 else 2
@@ -715,7 +715,7 @@ class App(QMainWindow):
             td = get_test(self.book, self.test)
             if td: self.qdata = td
         else:
-            pns = ["Part 1 - Introduction & Interview", "Part 2 - Individual Long Turn", "Part 3 - Two-way Discussion"]
+            pns = ["Part 1 - Introduction & Interview", "Part 2 - Individual Long Turn", "Part 3 - Discussion"]
             if self.part in pns: self.pc.setCurrentIndex(pns.index(self.part))
             td = get_test(self.book, self.test)
             if td and self.part in td: self.qdata = td[self.part]
